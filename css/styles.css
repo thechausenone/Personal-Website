@@ -1,3 +1,9 @@
+/*==== VARIABLES ====*/
+:root{
+	--light-grey:#F8F8F8;
+}
+
+/*==== FONTS ====*/
 @font-face{
 	font-family:'Nexa Bold';
 	src:url('../fonts/Nexa/Nexa Bold.otf');
@@ -8,10 +14,45 @@
 	src:url('../fonts/Nexa/Nexa Light.otf');
 }
 
-body{
-	
+@font-face{
+	font-family:'Lato';
+	src:url('../fonts/Lato/Lato-Regular.ttf');
 }
 
+@font-face{
+	font-family:'Lato';
+	src:url('../fonts/Lato/Lato-Italic.ttf');
+	font-style:italic;
+}
+
+@font-face{
+	font-family:'Lato';
+	src:url('../fonts/Lato/Lato-Bold.ttf');
+	font-weight:bold;
+}
+
+
+body{
+	font-family:Lato;
+	font-size: 16px;
+}
+
+.sectionTitle{
+	font-size:200%;
+	text-align:center;
+	font-family:"Nexa Light";
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding-bottom:50px;
+}
+
+.paraText{
+	text-align:justify;
+	line-height:200%;
+
+}
+
+/*==== NAVIGATION BAR ====*/
 .navbar{
 	font-family:"Nexa Light";
 	text-transform:uppercase;
@@ -21,34 +62,42 @@ body{
 .navbar-right{
 	padding-right:20px;
 }
-	
+
+/*==== LANDING SECTION ====*/
 .splashSection{
-	padding-top:50px;
+	padding:125px 15px 75px 15px;
+	background:url('../img/landing/hue_overlay.png') no-repeat fixed center;
+	height:100vh;
+}
+
+.splashSection img{
+	width: 25%;
+	height:auto;
+	margin:0 auto;
+}
+
+.splashSection h1{
 	color:white;
 	font-family:"Nexa Light";
 	letter-spacing:2px;
 	text-align:center;
-	background-color: #2f2f2f;
 }
+
 
 .nameBold{
 	font-family:"Nexa Bold";
 }
 
-.sectionTitle{
-	font-size:200%;
-	text-align:center;
-	font-family:"Nexa Light";
-	text-transform:uppercase;
-	letter-spacing:2px;
+/*==== ABOUT SECTION ====*/
+.aboutSection{
+	padding:75px 15px;
+	background-color:orange;
 }
 
-.paraText{
-	
-}
-
+/*==== EXPERIENCE SECTION ====*/
 .experienceSection{
-	
+	padding:75px 15px;
+	background-color:var(--light-grey);
 }
 
 .timelineContainer{
@@ -56,32 +105,37 @@ body{
 }
 
 .timelineSection{
-	
+
 }
 
 .timelineDate{
-	
+	text-align:right;
 }
 
 .timelineIcon{
-	
+	text-align:center;
 }
 
 .timelineDetails{
-	
+	background-color:white;
+	margin-bottom:30px;
+	border-radius:5px;
 }
 
 .jobLocation{
-	
+	font-size:1.5em;
+	padding-bottom:2px;
 }
 
 
 .jobTitle{
-	
+	font-size:1.3em;
+	padding-bottom:12px;
 }
 
+/*==== PROJECTS SECTION ====*/
 .projectsSection{
-
+	padding:75px 15px;
 }
 
 .projectContainer{
@@ -89,7 +143,7 @@ body{
 }
 
 .projectCard{
-	
+	text-align:center;
 }
 
 .graphicsSection{
@@ -100,6 +154,7 @@ body{
 
 }
 
+/*==== FOOTER SECTION ====*/
 .footerSection{
 	background-color: #2f2f2f;
 	color:white;
