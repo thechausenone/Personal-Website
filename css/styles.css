@@ -1,6 +1,13 @@
 /*==== VARIABLES ====*/
 :root{
-	--light-grey:#F8F8F8;
+	--logo:#00b6b1;
+	--accent-blue:#9BD8D9;
+	--accent-brown:#DADAD2;
+	--font:#5C5D5F;
+	--links:#9B8E7B;
+	--border:#dcd9d9;
+	--bg:#fff;
+	--bg-alt:#f2f2f5;
 }
 
 /*==== FONTS ====*/
@@ -34,7 +41,8 @@
 
 body{
 	font-family:Lato;
-	font-size: 16px;
+	font-size: 17px;
+	color:var(--font);
 }
 
 .sectionTitle{
@@ -49,6 +57,7 @@ body{
 .paraText{
 	text-align:justify;
 	line-height:200%;
+	color:var(--font);
 
 }
 
@@ -56,12 +65,39 @@ body{
 .navbar{
 	font-family:"Nexa Light";
 	text-transform:uppercase;
-	letter-spacing:2px;
+	letter-spacing:1px;
 }
 
 .navbar-right{
-	padding-right:20px;
+	padding-right:10px;
+	display:inline-block;
+	float:left;
 }
+
+.navbar-nav li a{
+	line-height:37.5px;
+}
+
+.navbar-brand p{
+	letter-spacing:2px;
+	margin-top:11px;
+	font-size:25px;
+}
+
+.navbar-nav li a span{/*following three for underline*/
+	display:block;
+	border-bottom:2.5px solid transparent; 
+}
+
+ul.nav a:hover { 
+	color: var(--font) !important; 
+}
+
+ul.nav a:hover span{ 
+	border-bottom:2.5px solid var(--logo); 
+	display:block;
+}
+
 
 /*==== LANDING SECTION ====*/
 .splashSection{
@@ -69,6 +105,14 @@ body{
 	background:url('../img/landing/hue_overlay.png') no-repeat fixed center;
 	height:100vh;
 }
+
+.logo-center{
+		min-height:75%;
+		min-height:75vh;
+		display:flex;
+		align-items:center;
+}
+
 
 .splashSection img{
 	width: 25%;
@@ -91,13 +135,14 @@ body{
 /*==== ABOUT SECTION ====*/
 .aboutSection{
 	padding:75px 15px;
-	background-color:orange;
+	background-color:white;
+	border-bottom:1px solid var(--border);
 }
 
 /*==== EXPERIENCE SECTION ====*/
 .experienceSection{
 	padding:75px 15px;
-	background-color:var(--light-grey);
+	background-color:var(--bg-alt);
 }
 
 .timelineContainer{
@@ -110,6 +155,8 @@ body{
 
 .timelineDate{
 	text-align:right;
+	padding-top:20px;
+	font-size:1.2em
 }
 
 .timelineIcon{

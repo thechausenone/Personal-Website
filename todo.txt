@@ -3,6 +3,8 @@
 - vertically align splash page contents
 - add hover effect on footer icons
 - add contact me section
+- add scrollspy effect
 
 **RESIZING
 - fix content behaviour in footer
+- add max widths to elements
