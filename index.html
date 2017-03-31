@@ -20,32 +20,44 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span> 
 				</button>
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="#S1">
 					<p>&ltDavidChau/&gt</p>
 				</a>
 				
 			</div>
 			<div class = "collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#S2"><span>About</span></a></li>
+				<li><a href="#S3"><span>Experience</span></a></li>
+				<li><a href="#S4"><span>Projects</span></a></li>
+				<li><a href="#S5"><span>Contact</span></a></li>
 			</ul>
 			</div>
 		</div>
 	</div>
 	
 	<!--SPLASH PAGE SECTION-->
-		<div class="splashSection">
+		<div class="splashSection" id="S1">
 			<div class="container-fluid">
-				<div class="logo-center vertical-center">
-				<img class="img-responsive vertical-center" src="img/logo/white_text_light.png" alt="logo">
-				</div>
+					<div class="relativeBox">
+						<div class="logo-center vertical-center">
+							<img src="img/logo/white_text_light.png" class="vertical-center" alt="logo">
+						</div>
+					</div>
+						<div class = "button-center">
+							<!--button outline class removed b/c hover links weren't working-->
+							<a href="#" target="_blank">R&eacutesum&eacute</a>
+							<a href="https://github.com/thechausenone" target="_blank">Github</a>
+							<a href="https://www.linkedin.com/in/dchau97/" target="_blank">LinkedIn</a>
+						</div>	
 			</div>
 		</div>	
 	
 	<!--ABOUT ME SECTION-->
-		<div class="aboutSection">
+		<div class="aboutSection" id="S2">
 			<div class="container-fluid">
-				<div class="sectionTitle col-sm-3">
-					<p>About Me</p>
+				<div class="col-sm-3">
+					<div class="sectionTitle"><span class="rwd-line">About Me</span></div>		
 				</div>
 				<div class="paraText col-sm-9">
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
@@ -59,9 +71,9 @@
 		
 	<!--EXPERIENCE SECTION-->
 	<!-- add graphics design into here-->
-		<div class="experienceSection">
+		<div class="experienceSection" id="S3">
 			<div class="container-fluid">
-				<div class="sectionTitle">Experience</div>
+				<div class="sectionTitle"><span>Experience</span></div>
 				<div class="timelineContainer">
 					<div class="timelineSection">
 						<div class="timelineDate col-sm-3">
@@ -106,9 +118,9 @@
 		</div>	
 		
 	<!--PROJECTS SECTION-->
-		<div class="projectsSection">
+		<div class="projectsSection" id="S4">
 			<div class="container-fluid">
-				<div class="sectionTitle">Projects</div>
+				<div class="sectionTitle"><span>Projects</span></div>
 				<div class="projectContainer">
 					<!--Add darken on hover & also link on click-->
 					<div class="projectCard col-sm-4">
@@ -127,7 +139,12 @@
 		</div>	
 	
 	<!--CONTACT ME SECTION (still considering how to implement)-->
-	
+		<div class="contactSection" id="S5">
+			<div class="container-fluid">
+				<div class="sectionTitle"><span>Contact Me</span></div>
+			</div>
+		</div>
+		
 	<!--FOOTER (LINKEDIN, GITHUB,..)-->
 		<div class="footerSection">
 			<div class="container-fluid">

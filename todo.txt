@@ -1,8 +1,10 @@
 ====TO DO LIST====
-- set default colour scheme to css
-- vertically align splash page contents
+- add logos to landing page buttons
+- change toggle button hover effect
+- set min window height?
+- add resume download link
 - add hover effect on footer icons
-- add contact me section
+- fix bookmark link with an offset/javascript
 - add scrollspy effect
 
 **RESIZING

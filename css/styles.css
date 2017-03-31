@@ -15,30 +15,25 @@
 	font-family:'Nexa Bold';
 	src:url('../fonts/Nexa/Nexa Bold.otf');
 }
-
 @font-face{
 	font-family:'Nexa Light';
 	src:url('../fonts/Nexa/Nexa Light.otf');
 }
-
 @font-face{
 	font-family:'Lato';
 	src:url('../fonts/Lato/Lato-Regular.ttf');
 }
-
 @font-face{
 	font-family:'Lato';
 	src:url('../fonts/Lato/Lato-Italic.ttf');
 	font-style:italic;
 }
-
 @font-face{
 	font-family:'Lato';
 	src:url('../fonts/Lato/Lato-Bold.ttf');
 	font-weight:bold;
 }
-
-
+/*==== GENERAL ====*/
 body{
 	font-family:Lato;
 	font-size: 17px;
@@ -46,7 +41,7 @@ body{
 }
 
 .sectionTitle{
-	font-size:200%;
+	font-size:30px;
 	text-align:center;
 	font-family:"Nexa Light";
 	text-transform:uppercase;
@@ -54,11 +49,16 @@ body{
 	padding-bottom:50px;
 }
 
+.sectionTitle span{
+	border-bottom:2.5px solid var(--logo);
+	padding-bottom:8px;
+	white-space:nowrap;
+}
+
 .paraText{
 	text-align:justify;
 	line-height:200%;
 	color:var(--font);
-
 }
 
 /*==== NAVIGATION BAR ====*/
@@ -80,12 +80,15 @@ body{
 
 .navbar-brand p{
 	letter-spacing:2px;
-	margin-top:11px;
+	margin-top:2.5px;
 	font-size:25px;
 }
 
-.navbar-nav li a span{/*following three for underline*/
-	display:block;
+.navbar-brand:hover{
+	color: var(--logo) !important; 
+}
+
+.navbar-nav li a span{/*following three blocks for underline*/
 	border-bottom:2.5px solid transparent; 
 }
 
@@ -95,9 +98,8 @@ ul.nav a:hover {
 
 ul.nav a:hover span{ 
 	border-bottom:2.5px solid var(--logo); 
-	display:block;
+	padding-bottom:8px;
 }
-
 
 /*==== LANDING SECTION ====*/
 .splashSection{
@@ -106,35 +108,52 @@ ul.nav a:hover span{
 	height:100vh;
 }
 
-.logo-center{
-		min-height:75%;
-		min-height:75vh;
-		display:flex;
-		align-items:center;
+.relativeBox{
+	/*border:1px solid red;*/
+	position:relative;
 }
 
+.logo-center{
+		min-height:55%;
+		min-height:55vh;
+		display:flex;
+		align-items:center;
+		/*border:1px solid black;*/
+}
 
 .splashSection img{
-	width: 25%;
+	width: 300px;
 	height:auto;
 	margin:0 auto;
 }
 
-.splashSection h1{
-	color:white;
-	font-family:"Nexa Light";
-	letter-spacing:2px;
+.button-center{
 	text-align:center;
+	position:absolute;
+	margin:0 auto;
+	left:0;
+	right:0;
+	/*border:1px solid black;*/
 }
 
-
-.nameBold{
-	font-family:"Nexa Bold";
+.button-center a{
+	display:inline-block;
+    color: white;
+    padding: 15px 25px;
+    border: 2.5px solid white;
+    border-radius: 10px;
 }
+
+.button-center a:hover, .button-center a:active{
+	text-decoration:none;
+	color:var(--logo);
+	background-color:white;
+}
+
 
 /*==== ABOUT SECTION ====*/
 .aboutSection{
-	padding:75px 15px;
+	padding:75px 0px;
 	background-color:white;
 	border-bottom:1px solid var(--border);
 }
@@ -183,6 +202,7 @@ ul.nav a:hover span{
 /*==== PROJECTS SECTION ====*/
 .projectsSection{
 	padding:75px 15px;
+	border-bottom:1px solid var(--border);
 }
 
 .projectContainer{
@@ -201,9 +221,14 @@ ul.nav a:hover span{
 
 }
 
+/*==== CONTACT SECTION ====*/
+.contactSection{
+	padding:75px 15px;
+}
+
 /*==== FOOTER SECTION ====*/
 .footerSection{
-	background-color: #2f2f2f;
+	background-color: var(--logo);
 	color:white;
 	padding:2% 0;
 	height:90px;
@@ -224,4 +249,37 @@ footer{
 .footerSection img{
 	width:40px;
 	height:auto;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.splashSection img{
+		width: 500px;
+	}
+	
+	.navbar-brand p{
+		margin-top:11px;
+	}
+	
+	.btnOutline, .btnOutline:link, .btnOutline:visited{
+	display: inline-block;
+    color: white;
+    padding: 15px 25px;
+    border: 2.5px solid white;
+    border-radius: 10px;
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
 }
