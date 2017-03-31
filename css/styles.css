@@ -1,13 +1,13 @@
 /*==== VARIABLES ====*/
 :root{
 	--logo:#00b6b1;
-	--accent-blue:#9BD8D9;
+	--footer:#373838;
 	--accent-brown:#DADAD2;
 	--font:#5C5D5F;
 	--links:#9B8E7B;
 	--border:#dcd9d9;
 	--bg:#fff;
-	--bg-alt:#f2f2f5;
+	--bg-alt:#F8F8F8;
 }
 
 /*==== FONTS ====*/
@@ -136,20 +136,61 @@ ul.nav a:hover span{
 	/*border:1px solid black;*/
 }
 
+#btnDownload{
+	background-image:url('../img/social/download_white.png');
+	background-color:transparent;
+	background-size:24px auto;
+	background-repeat:no-repeat;
+	background-position:25px 15px;
+}
+
+#btnGithub{
+	background-image:url('../img/social/github_white.png');
+	background-color:transparent;
+	background-size:25px auto;
+	background-repeat:no-repeat;
+	background-position:25px 16px;
+}
+
+#btnLinkedin{
+	background-image:url('../img/social/linkedin_white.png');
+	background-color:transparent;
+	background-size:22px auto;
+	background-repeat:no-repeat;
+	background-position:29px 13px;
+}
+
 .button-center a{
 	display:inline-block;
     color: white;
-    padding: 15px 25px;
+	whitespace:nowrap;
+    padding: 15px 25px 15px 60px;
     border: 2.5px solid white;
     border-radius: 10px;
+	font-family:"Nexa Bold";
+	font-size:18px;
+	margin:4px 4px;
 }
 
 .button-center a:hover, .button-center a:active{
 	text-decoration:none;
 	color:var(--logo);
-	background-color:white;
 }
 
+#btnDownload:hover{
+	background-color:white;
+	background-image:url('../img/social/download_hover.png');
+}
+
+#btnGithub:hover{
+	background-color:white;
+	background-image:url('../img/social/github_hover.png');
+}
+
+#btnLinkedin:hover{
+	background-color:white;
+	background-image:url('../img/social/linkedin_hover.png');
+}
 
 /*==== ABOUT SECTION ====*/
 .aboutSection{
@@ -202,6 +243,7 @@ ul.nav a:hover span{
 /*==== PROJECTS SECTION ====*/
 .projectsSection{
 	padding:75px 15px;
+	background-color:var(--bg-alt)
 	border-bottom:1px solid var(--border);
 }
 
@@ -228,28 +270,17 @@ ul.nav a:hover span{
 
 /*==== FOOTER SECTION ====*/
 .footerSection{
-	background-color: var(--logo);
+	background-color: var(--font);
 	color:white;
 	padding:2% 0;
 	height:90px;
+	text-align:center;
 }
 
 footer{
 
 }
 
-.copyright{
-
-}
-
-.socialIcons{
-	text-align:right;
-}
-
-.footerSection img{
-	width:40px;
-	height:auto;
-}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -270,6 +301,10 @@ footer{
     padding: 15px 25px;
     border: 2.5px solid white;
     border-radius: 10px;
+	}
+	
+	.button-center a{
+	margin:0px 4px;
 }
 
 }
