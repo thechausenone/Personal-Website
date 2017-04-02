@@ -33,6 +33,7 @@
 	src:url('../fonts/Lato/Lato-Bold.ttf');
 	font-weight:bold;
 }
+
 /*==== GENERAL ====*/
 body{
 	font-family:Lato;
@@ -59,6 +60,15 @@ body{
 	text-align:justify;
 	line-height:200%;
 	color:var(--font);
+	font-size:20px;
+}
+
+.contentContainer{
+	width:90%;
+	height:auto;
+	margin:0 auto;
+	/*border:1px solid black;*/
+	padding:0px;
 }
 
 /*==== NAVIGATION BAR ====*/
@@ -66,6 +76,12 @@ body{
 	font-family:"Nexa Light";
 	text-transform:uppercase;
 	letter-spacing:1px;
+}
+
+.headerContainer{
+	width:100%;
+	margin:0 auto;
+	/*border:1px solid black;*/
 }
 
 .navbar-right{
@@ -79,7 +95,7 @@ body{
 }
 
 .navbar-brand p{
-	letter-spacing:2px;
+	letter-spacing:4px;
 	margin-top:2.5px;
 	font-size:25px;
 }
@@ -199,47 +215,6 @@ ul.nav a:hover span{
 	border-bottom:1px solid var(--border);
 }
 
-/*==== EXPERIENCE SECTION ====*/
-.experienceSection{
-	padding:75px 15px;
-	background-color:var(--bg-alt);
-}
-
-.timelineContainer{
-	
-}
-
-.timelineSection{
-
-}
-
-.timelineDate{
-	text-align:right;
-	padding-top:20px;
-	font-size:1.2em
-}
-
-.timelineIcon{
-	text-align:center;
-}
-
-.timelineDetails{
-	background-color:white;
-	margin-bottom:30px;
-	border-radius:5px;
-}
-
-.jobLocation{
-	font-size:1.5em;
-	padding-bottom:2px;
-}
-
-
-.jobTitle{
-	font-size:1.3em;
-	padding-bottom:12px;
-}
-
 /*==== PROJECTS SECTION ====*/
 .projectsSection{
 	padding:75px 15px;
@@ -247,20 +222,88 @@ ul.nav a:hover span{
 	border-bottom:1px solid var(--border);
 }
 
-.projectContainer{
-
+.projectCardContainer{
+	width:90%;
+	margin:5%;
+	float:left;
+	position:relative;
 }
 
 .projectCard{
+	width:100%;
+	padding-bottom:100%;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-color:var(--logo);
+	display:block;
+}
+
+.projectTitle{
+	position:absolute;
+	width:100%;
 	text-align:center;
+	text-decoration:none;
+	color:white;
+	font: 170% "Nexa Light";
+	letter-spacing:4px;
+	visibility:hidden;
 }
 
-.graphicsSection{
-
+.oneLine{
+	bottom:40%;
 }
 
-.graphicContainer{
+.twoLine{
+	bottom:35%;
+}
 
+.projectTags{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+	font: 90% "Lato";
+	letter-spacing:4px;
+	visibility:hidden;
+	bottom:0;
+	line-height:20px;
+}
+
+#Gumballin{
+	background-image:url("../img/projects/gumballin.png");
+	/*background-size: 42.7% 76.4%;*/
+	background-size:28% 50%;
+}
+
+#CygnusStrike{
+	background-image:url("../img/projects/cygnus-strike.png");
+	/*background-size: 66.8% 76.4%;*/
+	background-size:44% 50%;
+}
+
+#PokeDodge{
+	background-image:url("../img/projects/pokedodge.png");
+	/*background-size: 76.4% 76.4%;*/
+	background-size: 50% 50%;
+}
+
+#Graphics{
+	background-image:url("../img/projects/graphics.png");
+	/*background-size: 63.7% 76.4%;*/
+	background-size:42% 50%;
+}
+
+.projectCardContainer #Gumballin:hover,
+.projectCardContainer #CygnusStrike:hover,
+.projectCardContainer #PokeDodge:hover,
+.projectCardContainer #Graphics:hover{
+	background-image:none;
+}
+
+.projectCard:hover .projectTitle,
+.projectCard:hover .projectTags{
+	visibility:visible;
 }
 
 /*==== CONTACT SECTION ====*/
@@ -280,7 +323,6 @@ ul.nav a:hover span{
 footer{
 
 }
-
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -306,15 +348,53 @@ footer{
 	.button-center a{
 	margin:0px 4px;
 }
+	
+	.headerContainer{
+	width:75%;
+	}
+	
+	.contentContainer{
+	width:75%;
+	}
+	
+	.projectCardContainer{
+		width:45%;
+		padding-bottom:0px;
+		margin:2.5%;
+	}
 
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-
+@media (min-width: 992px) {
+	.headerContainer{
+		width:75%;
+	}
+	
+	.contentContainer{
+		width:75%;
+	}
+	
+	.projectCardContainer{
+		width:45%;
+		padding-bottom:0px;
+		margin:2.5%;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
-
+@media (min-width: 1200px) {
+	.headerContainer{
+	width:60%;
+	}
+	
+	.contentContainer{
+	width:60%;
+	}
+	
+	.projectCardContainer{
+		width:31%;
+		padding-bottom:0px;
+		margin:1%;
+	}
 }
