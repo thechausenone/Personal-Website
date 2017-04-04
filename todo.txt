@@ -1,5 +1,4 @@
 ====TO DO LIST====
-- add logos to landing page buttons
 - change toggle button hover effect
 - set min window height?
 - add resume download link
@@ -10,3 +9,4 @@
 **RESIZING
 - fix content behaviour in footer
 - add max widths to elements
+- project card text (title & tags)

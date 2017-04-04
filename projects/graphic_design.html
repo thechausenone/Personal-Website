@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GRAPHICS</title>
+		<!--required meta tags-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+		<!--bootstrap css-->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/styles.css" rel="stylesheet">
+		<link href="../css/projects_style.css" rel="stylesheet">
+		<!-- jQuery library-->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--Latest compiled Javascript-->
+		<script src="../js/bootstrap.js"></script>
+	</head>
+	<body>
+		<!--NAVIGATION BAR-->
+		<div class = "navbar navbar-default navbar-fixed-top">
+			<div class = "container-fluid">
+			<div class="headerContainer">
+				<div class = "navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="../index.html#landing">
+						<p>DavidChau</p>
+					</a>
+				</div>
+				<div class = "collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about"><span>About</span></a></li>
+					<li><a href="../index.html#projects"><span>Projects</span></a></li>
+					<li><a href="../index.html#contact"><span>Contact</span></a></li>
+				</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<!--PROJECT TITLE SECTION-->
+		<div class="titleSection">
+			<div class="container-fluid">
+				<h1>Graphic Design Gallery</h1>
+				<p>An assortment of things I've designed for school and in my free time.</p>
+			</div>
+		</div>
+		
+		<!--GALLERY SECTION-->
+		<div class="gallerySection">
+			<div class="container-fluid">
+				<div class="contentContainer">
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="purolytics" title="An ad made for a foodsale during the time I was interning at Purolator."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="magazine-front" title="The front cover for a fake gaming magazine."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="magazine-back" title="The back cover for a fake gaming magazine."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="hots-ad" title="A magazine ad created for Heroes of the Storm."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="card-snake" title="A greeting card for Chinese New Year in 2025."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="card-goat" title="A greeting card for Chinese New Year in 2015."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="vector-portrait" title="A vector portrait of myself."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="abstract" title="Abstract image created using a variety of techniques in Illustrator."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="combo1" title="A combo image made of 6 unique images."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="combo2" title="A combo image made of 13+ unique images."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="edgy" title="Some type of edgy graphic."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="floor-ad" title="A magazine ad made for a pre-existing hardwood flooring company."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="chaudown" title="A logo created in mind for a fabricated restaurant."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="rice-bowl" title="A 3D rice bowl."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="timeless" title="A logo created for a gaming team (Timeless Gaming)."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="voidbox" title="A print-out and fold-up box design."></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--MODAL-->
+		<div id="myModal" class="modal">
+			<span class="close"
+			onclick="document.getElementById('myModal').style.display='none'">
+			&times;
+			</span>
+			<img class="modal-content" id="modalImg" src="">
+			<div id="modalCaption"></div>
+		</div>
+			
+		<!--JAVASCRIPT FOR MODAL-->
+		<script>
+		var modal = document.getElementById('myModal');
+		var modalImg = document.getElementById('modalImg');
+		var modalmodalCaption = document.getElementById('modalCaption');
+		
+		//open modal when image is clicked
+		var openModal=function(){
+			var bg= $(this).css('background-image');
+			bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+			modal.style.display="block";
+			modalImg.src = bg;
+			modalmodalCaption.innerHTML=this.title;
+		}
+		
+		document.getElementById('abstract').onclick=openModal;
+		document.getElementById('card-goat').onclick=openModal;
+		document.getElementById('card-snake').onclick=openModal;
+		document.getElementById('chaudown').onclick=openModal;
+		document.getElementById('combo1').onclick=openModal;
+		document.getElementById('combo2').onclick=openModal;
+		document.getElementById('edgy').onclick=openModal;
+		document.getElementById('floor-ad').onclick=openModal;
+		document.getElementById('hots-ad').onclick=openModal;
+		document.getElementById('magazine-back').onclick=openModal;
+		document.getElementById('magazine-front').onclick=openModal;
+		document.getElementById('purolytics').onclick=openModal;
+		document.getElementById('rice-bowl').onclick=openModal;
+		document.getElementById('timeless').onclick=openModal;
+		document.getElementById('vector-portrait').onclick=openModal;
+		document.getElementById('voidbox').onclick=openModal;
+		
+		//get the element that closes the modal
+		var btnClose = document.getElementsByClassName("close")[0];
+		
+		//close modal when user clicks the X
+		btnClose.onclick = function(){
+			modal.style.display="none";
+		}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

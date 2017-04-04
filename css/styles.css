@@ -218,7 +218,7 @@ ul.nav a:hover span{
 /*==== PROJECTS SECTION ====*/
 .projectsSection{
 	padding:75px 15px;
-	background-color:var(--bg-alt)
+	background-color:var(--bg-alt);
 	border-bottom:1px solid var(--border);
 }
 
@@ -249,13 +249,9 @@ ul.nav a:hover span{
 	visibility:hidden;
 }
 
-.oneLine{
-	bottom:40%;
-}
+.oneLine{bottom:40%;}
 
-.twoLine{
-	bottom:35%;
-}
+.twoLine{bottom:35%;}
 
 .projectTags{
 	position:absolute;
@@ -326,7 +322,6 @@ footer{
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.splashSection img{
