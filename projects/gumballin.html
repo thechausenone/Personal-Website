@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GUMBALLIN</title>
+		<!--required meta tags-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+		<!--bootstrap css-->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/main_style.css" rel="stylesheet">
+		<link href="../css/project_general_style.css" rel="stylesheet">
+		<!-- jQuery library-->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--Latest compiled Javascript-->
+		<script src="../js/bootstrap.js"></script>
+	</head>
+	<body>
+		<!--NAVIGATION BAR-->
+		<div class = "navbar navbar-default navbar-fixed-top">
+			<div class = "container-fluid">
+			<div class="headerContainer">
+				<div class = "navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="../index.html#landing">
+						<p>DavidChau</p>
+					</a>
+				</div>
+				<div class = "collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about"><span>About</span></a></li>
+					<li><a href="../index.html#projects"><span>Projects</span></a></li>
+					<li><a href="../index.html#contact"><span>Contact</span></a></li>
+				</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<!--PROJECT TITLE SECTION-->
+		<div class="titleSection">
+			<div class="container-fluid">
+				<h1>GUMBALLIN</h1>
+				<p>A mechatronics system created using Lego Mindstorms NXT.</p>
+				<div class = "button-center">
+					<a href="https://github.com/thechausenone/Sandbox-Misc/tree/master/Gumballin" target="_blank" id="btnGithub">
+						Repository
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--INFO SECTION-->
+		<div class="infoSection">
+			<div class="container-fluid">
+				<div class="contentContainer">
+					<div class="col-sm-6 areaAbout"> 
+						<h1 class="sectionTitle2">About</h1>
+						<p class="paraText">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="col-sm-6 areaApproach"> 
+						<h1 class="sectionTitle2">Approach</h1>
+						<p class="paraText">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--GALLERY SECTION-->
+		<div class="gallerySection">
+			<div class="container-fluid">
+				<div class="contentContainer">
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_1" title="Front orthographic view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_2" title="Side orthographic view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_3" title="Top orthographic view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_4" title="3D-printed piston mechanism."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_5" title="3D-printed rotating plate mechanism."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_6" title="Code flowchart for Accepting/Sorting Phase."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_7" title="Code flowchart for Menu/Dispensing Phase."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="gumballin_8" title="Team members of Gumballin."></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--FOOTER-->
+		<div class="footerSection">
+			<div class="container-fluid">
+				<footer>
+					<p class= "copyright">
+					 Copyright &copy 2017
+					</p>
+				</footer>
+			</div>
+		</div>
+		
+		<!--MODAL-->
+		<div id="myModal" class="modal">
+			<span class="close"
+			onclick="document.getElementById('myModal').style.display='none'">
+			&times;
+			</span>
+			<img class="modal-content" id="modalImg" src="">
+			<div id="modalCaption"></div>
+		</div>
+			
+		<!--JAVASCRIPT FOR MODAL-->
+		<script>
+		var modal = document.getElementById('myModal');
+		var modalImg = document.getElementById('modalImg');
+		var modalmodalCaption = document.getElementById('modalCaption');
+		
+		//open modal when image is clicked
+		var openModal=function(){
+			var bg= $(this).css('background-image');
+			bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+			modal.style.display="block";
+			$("body").css("overflow-y", "hidden");
+			modalImg.src = bg;
+			modalmodalCaption.innerHTML=this.title;
+		}
+		
+		document.getElementById('gumballin_1').onclick=openModal;
+		document.getElementById('gumballin_2').onclick=openModal;
+		document.getElementById('gumballin_3').onclick=openModal;
+		document.getElementById('gumballin_4').onclick=openModal;
+		document.getElementById('gumballin_5').onclick=openModal;
+		document.getElementById('gumballin_6').onclick=openModal;
+		document.getElementById('gumballin_7').onclick=openModal;
+		document.getElementById('gumballin_8').onclick=openModal;
+		
+		//get the element that closes the modal
+		var btnClose = document.getElementsByClassName("close")[0];
+		
+		//close modal when user clicks the X
+		btnClose.onclick = function(){
+			modal.style.display="none";
+			$("body").css("overflow-y", "auto");
+		}
+		</script>
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
 		<!--bootstrap css-->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
-		<link href="../css/styles.css" rel="stylesheet">
-		<link href="../css/projects_style.css" rel="stylesheet">
+		<link href="../css/main_style.css" rel="stylesheet">
+		<link href="../css/project_general_style.css" rel="stylesheet">
 		<!-- jQuery library-->
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!--Latest compiled Javascript-->
@@ -41,7 +41,7 @@
 		</div>
 		
 		<!--PROJECT TITLE SECTION-->
-		<div class="titleSection">
+		<div class="titleSection titleSectionGraphic">
 			<div class="container-fluid">
 				<h1>Graphic Design Gallery</h1>
 				<p>An assortment of things I've designed for school and in my free time.</p>
@@ -93,6 +93,7 @@
 			var bg= $(this).css('background-image');
 			bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
 			modal.style.display="block";
+			$("body").css("overflow-y", "hidden");
 			modalImg.src = bg;
 			modalmodalCaption.innerHTML=this.title;
 		}
@@ -120,8 +121,18 @@
 		//close modal when user clicks the X
 		btnClose.onclick = function(){
 			modal.style.display="none";
+			$("body").css("overflow-y", "auto");
 		}
 		</script>
+		
+		<!--FOOTER-->
+		<div class="footerSection">
+			<div class="container-fluid">
+				<footer>
+					<p class= "copyright">
+					 Copyright &copy 2017
+					</p>
+				</footer>
 	</body>
 </html>
 
