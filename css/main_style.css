@@ -1,6 +1,7 @@
 /*==== VARIABLES ====*/
 :root{
 	--logo:#00b6b1;
+	--logo-darker:#10706d;
 	--footer:#373838;
 	--accent-brown:#DADAD2;
 	--font:#5C5D5F;
@@ -36,7 +37,7 @@
 
 /*==== GENERAL ====*/
 body{
-	font-family:Lato;
+	font-family:"Lato";
 	font-size: 17px;
 	color:var(--font);
 }
@@ -67,7 +68,6 @@ body{
 	width:90%;
 	height:auto;
 	margin:0 auto;
-	/*border:1px solid black;*/
 	padding:0px;
 }
 
@@ -126,7 +126,6 @@ ul.nav a:hover span{
 }
 
 .relativeBox{
-	/*border:1px solid red;*/
 	position:relative;
 }
 
@@ -134,8 +133,7 @@ ul.nav a:hover span{
 		min-height:55%;
 		min-height:55vh;
 		display:flex;
-		align-items:center;
-		/*border:1px solid black;*/
+		align-items:center
 }
 
 .splashSection img{
@@ -150,7 +148,6 @@ ul.nav a:hover span{
 	margin:0 auto;
 	left:0;
 	right:0;
-	/*border:1px solid black;*/
 }
 
 #btnDownload{
@@ -260,11 +257,12 @@ ul.nav a:hover span{
 	text-align:center;
 	text-decoration:none;
 	color:white;
-	font: 90% "Lato";
+	font: 70% "Lato";
 	letter-spacing:4px;
 	visibility:hidden;
 	bottom:0;
 	line-height:20px;
+	text-transform:uppercase;
 }
 
 #Gumballin{
@@ -305,7 +303,103 @@ ul.nav a:hover span{
 
 /*==== CONTACT SECTION ====*/
 .contactSection{
-	padding:75px 15px;
+	padding:270px 0px;
+	background-color:var(--logo);
+	color:white;
+	position:relative;
+	overflow:hidden;
+}
+
+.halfBox{
+	width:50%;
+	height:100%;
+	position:absolute;
+	top:0;
+}
+
+.divMap{
+	background:url("../img/map.PNG") no-repeat center;
+	display:none;
+	left:0;
+}
+
+.colorFilter{
+	background-color:var(--logo);
+	opacity:0.78;
+	z-index:5;
+	width:100%;
+	left:0;
+}
+
+.contactText{
+	display:block;
+	float:left;
+	z-index:100;
+	width:100%;
+	top:33%;
+	left:0;
+}
+
+.contactText p{
+	position:absolute;
+	min-width:360px;
+	text-align:center;
+	font-size:25px;
+	display:block;
+	float:left;
+    padding:25px;
+    border: 3.5px solid white;
+	left:50%;
+	margin-left:-195px;
+}
+
+.contactText span{
+	font-size:40px;
+}
+
+.contactText img{
+	height:auto;
+	position:absolute;
+	right:0;
+}
+
+.divForm{
+	right:none;
+	width:100%;
+}
+
+.divForm form{
+	padding:50px 20px;
+}
+
+#btnSend{
+	padding:15px 35px;
+	background-color:transparent;
+	background-position:29px 13px;
+}
+
+#btnSend:hover{
+	cursor:not-allowed;
+	background-color:white;
+}
+
+.form-control{
+	background-color:var(--logo-darker);
+	border:none;
+	color:white;
+	margin-bottom:30px;
+}
+
+/*==== PRE-FOOTER SECTION ====*/
+.preFooterSection{
+	background-color:white;
+	padding-top:8px;
+}
+
+.preFooterSection p{
+	font-size:25px;
+	text-align:center;	
+	padding:25px 0;
 }
 
 /*==== FOOTER SECTION ====*/
@@ -360,6 +454,27 @@ footer{
 		padding-bottom:0px;
 		margin:2.5%;
 	}
+	
+	.divMap{
+		display:block;
+	}
+	
+	.contactText p{
+	margin-left:-180px;
+	}
+	
+	.contactText img{
+	display:none;
+	}
+	
+	.divForm{
+	right:0;
+	width:50%;
+	}
+	
+	.divForm form{
+	padding:50px 40px;
+}
 
 }
 
@@ -378,6 +493,18 @@ footer{
 		padding-bottom:0px;
 		margin:2.5%;
 	}
+	
+	.contactText p{
+	margin-left:-185px;
+	}
+	
+	.contactText img{
+	display:block;
+	max-width:100px;
+	top:25px;
+	margin-right:-50px;
+	}
+	
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -395,4 +522,18 @@ footer{
 		padding-bottom:0px;
 		margin:1%;
 	}
+	
+	.contactText p{
+	margin-left:-195px;
+	}
+	
+	.contactText img{
+		top:10px;
+		margin-right:-75px;
+		max-width:150px;
+	}
+	
+	.divForm form{
+	padding:50px 70px;
+}
 }
