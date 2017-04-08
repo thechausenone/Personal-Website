@@ -74,7 +74,6 @@ body{
 .headerContainer{
 	width:100%;
 	margin:0 auto;
-	/*border:1px solid black;*/
 }
 
 .navbar-right{
@@ -124,14 +123,15 @@ ul.nav a:hover span{
 }
 
 .logo-center{
-		min-height:55%;
-		min-height:55vh;
+		min-height:44%;
+		min-height:44vh;
 		display:flex;
 		align-items:center
 }
 
 .splashSection img{
-	width: 300px;
+	max-width:600px;
+	width: 100%;
 	height:auto;
 	margin:0 auto;
 }
@@ -142,6 +142,7 @@ ul.nav a:hover span{
 	margin:0 auto;
 	left:0;
 	right:0;
+	margin-top:0px;
 }
 
 #btnDownload{
@@ -169,20 +170,20 @@ ul.nav a:hover span{
 }
 
 .button-center a{
-	display:inline-block;
+	display:block;
+	width:190px;
+	margin:20px auto;
     color: white;
-	whitespace:nowrap;
     padding: 15px 25px 15px 60px;
     border: 2.5px solid white;
     border-radius: 10px;
 	font-family:"Raleway Medium";
 	text-transform:uppercase;
 	letter-spacing:2px;
-	margin:4px 4px;
+	text-decoration:none;
 }
 
 .button-center a:hover, .button-center a:active{
-	text-decoration:none;
 	color:var(--logo);
 }
 
@@ -320,7 +321,7 @@ ul.nav a:hover span{
 
 .colorFilter{
 	background-color:var(--logo);
-	opacity:0.78;
+	opacity:0.75;
 	z-index:5;
 	width:100%;
 	left:0;
@@ -400,7 +401,7 @@ ul.nav a:hover span{
 .preFooterSection p{
 	font-size:22px;
 	text-align:center;	
-	padding:25px 0;
+	padding:35px 0;
 	letter-spacing:1px;
 }
 
@@ -423,8 +424,14 @@ footer{
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	
+	.logo-center{
+		min-height:70%;
+		min-height:70vh;
+	}
+
 	.splashSection img{
-		width: 500px;
+		width: 600px;
 	}
 	
 	.navbar-brand p{
@@ -440,8 +447,18 @@ footer{
     border-radius: 10px;
 	}
 	
+	.button-center{
+	margin-top:-60px;
+	}
+	
+	#button-center-send{
+		margin-top:0px;
+	}
+	
 	.button-center a{
-	margin:0px 4px;
+	display:inline-block;
+	width:none;
+	margin:4px 4px;
 }
 	
 	.headerContainer{
