@@ -1,32 +1,26 @@
 /*==== VARIABLES ====*/
 :root{
 	--logo:#00b6b1;
-	--footer:#373838;
-	--accent-brown:#DADAD2;
+	--logo-darker:#10706d;
 	--font:#5C5D5F;
-	--links:#9B8E7B;
 	--border:#dcd9d9;
-	--bg:#fff;
 	--bg-alt:#F8F8F8;
 }
 
 /*==== FONTS ====*/
 @font-face{
 	font-family:'Raleway', sans-serif;
-	src:url('../fonts/Raleway/Raleway.ttf') format('truetype');
+	src:url('../fonts/Raleway/Raleway.woff2') format('woff2'),
+		url('../fonts/Raleway/Raleway.woff') format('woff'),
+		url('../fonts/Raleway/Raleway.ttf') format('truetype');
 }
 
 @font-face{
-	font-family:'Raleway Light', sans-serif;
-	src:url('../fonts/Raleway/Raleway-Light.ttf') format('truetype');
+	font-family:'Raleway Medium';
+	src:url('../fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+		url('../fonts/Raleway/Raleway-Medium.woff') format('woff'),
+		url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
 }
-
-@font-face{
-	font-family:'Raleway', sans-serif;
-	src:url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
-	font-weight:100;
-}
-
 /*==== GENERAL ====*/
 
 
@@ -34,7 +28,7 @@
 .titleSection{
 	padding:150px 15px 150px 15px;
 	text-align:center;
-	background-color:var(--logo);
+	background-color:#00b6b1;/*var(--logo);*/
 	color:white;
 }
 
@@ -66,7 +60,7 @@
 /*===INFO SECTION===*/
 .infoSection{
 	padding-bottom:75px;
-	border-bottom:1px solid var(--border);
+	border-bottom:1px solid #dcd9d9;/*var(--border);*/
 }
 
 
@@ -76,19 +70,23 @@
 }
 
 .areaAbout{
+	/* FIX TO MICROSOFT EDGE
 	padding-right:0px;
 	padding-left:0px;
+	*/
 }
 
 .areaApproach{
+	/* FIX TO MICROSOFT EDGE
 	padding-left:0px;
 	padding-right:0px;
+	*/
 }
 
 /*===GALLERY SECTION===*/
 .gallerySection{
 	padding:100px 0px;
-	background-color:var(--bg-alt);
+	background-color:#F8F8F8;/*var(--bg-alt);*/
 }
 
 .imgCardContainer{
@@ -104,7 +102,7 @@
 	background-position:50% 50%;
 	background-repeat:no-repeat;
 	background-size:cover;
-	border:1px solid var(--border);
+	border:1px solid #dcd9d9;/*var(--border);*/
 	display:block;
 	transition:0.3s;
 }
@@ -244,7 +242,6 @@
 	
 	.modal-content, #modalCaption{
 		width:75%;
-		
 	}
 
 	.areaAbout{

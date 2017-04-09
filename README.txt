@@ -26,3 +26,9 @@
 - responsive project card text (title & tags)
 - responsive "GET IN TOUCH" box
 - responsive landing page button positions
+
+===================================
+===========COMPATIBILITY===========
+===================================
+- microsoft edge does not support variable fonts
+- weird behaviour when moving browser window across extended screen displays of different resolution, microsoft edge
