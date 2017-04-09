@@ -110,19 +110,16 @@ ul.nav a:hover span{
 	background:url('../img/landing/hue_overlay.png') no-repeat fixed center;
 }
 
-.relativeBox{
-	position:relative;
-}
-
 .logo-center{
 	/*	min-height:55%;
 		min-height:55vh;*/
 		display:flex;
-		align-items:center
+		align-items:center;
+		padding-top:23px;
 }
 
 .splashSection img{
-	max-width:600px;
+	max-width:425px;
 	width: 100%;
 	height:auto;
 	margin:0 auto;
@@ -133,7 +130,7 @@ ul.nav a:hover span{
 	margin:0 auto;
 	left:0;
 	right:0;
-	margin-top:0px;
+	padding-top:10px;
 }
 
 #btnDownload{
@@ -417,12 +414,12 @@ footer{
 @media (min-width: 768px) {
 	
 	.logo-center{
-		min-height:50%;
-		min-height:50vh;
+		/*min-height:50%;
+		min-height:50vh;*/
 	}
 
 	.splashSection img{
-		width: 600px;
+		width: 425px;
 	}
 	
 	.navbar-brand p{
@@ -439,7 +436,7 @@ footer{
 	}
 	
 	.button-center{
-	margin-top:1%;
+	padding-top:20px;
 	}
 	
 	#button-center-send{
