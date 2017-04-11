@@ -157,6 +157,14 @@ ul.nav a:hover span{
 	background-position:29px 13px;
 }
 
+#btnDemo{
+	background-image:url('../img/social/demo_white.png');
+	background-color:transparent;
+	background-size:29px auto;
+	background-repeat:no-repeat;
+	background-position:26px 17px;
+}
+
 .button-center a{
 	display:block;
 	width:190px;
@@ -188,6 +196,11 @@ ul.nav a:hover span{
 #btnLinkedin:hover{
 	background-color:white;
 	background-image:url('../img/social/linkedin_hover.png');
+}
+
+#btnDemo:hover{
+	background-color:white;
+	background-image:url('../img/social/demo_hover.png');
 }
 
 /*==== ABOUT SECTION ====*/
