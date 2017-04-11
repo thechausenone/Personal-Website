@@ -12,6 +12,12 @@
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!--Latest compiled Javascript-->
 		<script src="js/bootstrap.js"></script>
+		<!--SEND BUTTON TOOLTIP-->
+		<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+		</script>
 		<!--FAVICON (http://realfavicongenerator.net/)-->
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
@@ -127,7 +133,7 @@
 			</div>
 			<div class="col-sm-6 divForm halfBox">
 				<form>
-				<fieldset disabled><!--Remove when this section is FUNCTIONAL-->
+				<!--<fieldset disabled><!--Remove when this section is FUNCTIONAL-->
 					  <div class="form-group">
 						<label for="fieldName">Name</label>
 						<input type="text" class="form-control" id="fieldName" placeholder="">
@@ -141,11 +147,11 @@
 						<textarea class="form-control" id="fieldTextArea" rows="6" placeholder=""></textarea>
 					  </div>
 					  <div class="button-center" id="button-center-send">
-						<a href="javascript:void(0)" id="btnSend">
+						<a href="javascript:void(0)" id="btnSend" data-toggle="tooltip" data-placement="right" title="Currently disabled. This feature is still being worked on.">
 							Send
 						</a>
 					  </div>
-				</fieldset>
+				<!--</fieldset>-->
 				</form>
 			</div>
 		</div>

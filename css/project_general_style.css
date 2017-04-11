@@ -22,7 +22,9 @@
 		url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
 }
 /*==== GENERAL ====*/
-
+a:hover, a:link, a:visited, a:active{
+	text-decoration:none;
+}
 
 /*===TITLE SECTION===*/
 .titleSection{
@@ -93,6 +95,7 @@
 	font-size: 18px;
 	color:#5C5D5F;/*var(--font)*/
 }
+
 /*===GALLERY SECTION===*/
 .gallerySection{
 	padding:100px 0px;
@@ -254,14 +257,6 @@
 		width:75%;
 	}
 
-	.areaAbout{
-	/*padding-right:40px;*/
-	}
-
-	.areaApproach{
-	/*padding-left:40px;*/
-	}
-	
 	.modal-content, #modalCaption{
 		width:75%;
 	}

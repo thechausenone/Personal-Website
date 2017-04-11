@@ -1,7 +1,7 @@
 /*==== VARIABLES ====*/
 :root{
 	--logo:#00b6b1;
-	--logo-darker:#10706d;
+	--logo-darker:#128480;
 	--font:#5C5D5F;
 	--border:#dcd9d9;
 	--bg-alt:#F8F8F8;
@@ -387,7 +387,7 @@ ul.nav a:hover span{
 }
 
 .form-control{
-	background-color:#10706d;/*var(--logo-darker)*/
+	background-color:#128480;/*var(--logo-darker)*/
 	border:none;
 	color:white;
 	margin-bottom:30px;
