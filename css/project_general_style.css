@@ -26,7 +26,7 @@
 
 /*===TITLE SECTION===*/
 .titleSection{
-	padding:150px 15px 150px 15px;
+	padding:150px 15px 100px 15px;
 	text-align:center;
 	background-color:#00b6b1;/*var(--logo);*/
 	color:white;
@@ -66,10 +66,12 @@
 
 .sectionTitle{
 	padding-bottom:40px;
-	padding-top:75px;
+	padding-top:25px;
 }
 
 .areaAbout{
+	padding-top:60px;
+	padding-bottom:40px;
 	/* FIX TO MICROSOFT EDGE
 	padding-right:0px;
 	padding-left:0px;
@@ -81,8 +83,16 @@
 	padding-left:0px;
 	padding-right:0px;
 	*/
+	padding-bottom:20px;
 }
 
+.paraTextList{
+	text-align:left;
+	line-height:200%;
+	font-family:"Raleway";
+	font-size: 18px;
+	color:#5C5D5F;/*var(--font)*/
+}
 /*===GALLERY SECTION===*/
 .gallerySection{
 	padding:100px 0px;
@@ -245,11 +255,11 @@
 	}
 
 	.areaAbout{
-	padding-right:40px;
+	/*padding-right:40px;*/
 	}
 
 	.areaApproach{
-	padding-left:40px;
+	/*padding-left:40px;*/
 	}
 	
 	.modal-content, #modalCaption{
