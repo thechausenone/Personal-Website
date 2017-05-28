@@ -1,10 +1,8 @@
 ===================================
-===============URGENT==============
+===============TOP PRIORITY========
 ===================================
-- CROSS BROWSER COMPATIBILITY (lastest versions of mozilla, safari, edge, internet explorer especially)
-- update open-in-tab resume name + resume itself
 - update linkedIn profile + Github information
-- add project section for the website
+- add project section for the website(?)
 
 ===================================
 ============GENERAL TO DO==========
@@ -17,6 +15,7 @@
 - apply color filter method to landing page background
 - make landing page logo + name combo more dynamic (separate them)
 - make modal boxes non-scrollable (i.e., account for portrait vs landscape)
+        -->changed so largest screen size will not scroll, however now landscape has issues at this size (need for interviews...)
 - fix Gumballin project logo (currently a lumpy circle...)
 - clean up CSS code (read through and delete uneccessary/reduce repeated styling)
 
@@ -25,7 +24,6 @@
 ===================================
 - responsive project card text (title & tags)
 - responsive "GET IN TOUCH" box
-- responsive landing page button positions
 
 ===================================
 ===========COMPATIBILITY===========

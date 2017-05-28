@@ -199,6 +199,7 @@ a:hover, a:link, a:visited, a:active{
 	font-size:100px;
 	font-weight:bold;
 	transition:0.3s;
+	z-index:1;
 }
 
 .close:hover,
@@ -313,9 +314,9 @@ a:hover, a:link, a:visited, a:active{
 	}
 	
 	.modal-content, #modalCaption{
-	width:50%;
-	height:auto;
-}
+	width:auto;
+	height:85%;
+	}
 
 }
 
