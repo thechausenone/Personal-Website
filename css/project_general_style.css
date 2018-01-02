@@ -153,6 +153,12 @@ a:hover, a:link, a:visited, a:active{
 #cygnus-strike_1{background-image:url("../img/projects/cygnus-strike/1.png");}
 #cygnus-strike_2{background-image:url("../img/projects/cygnus-strike/2.png");}
 #cygnus-strike_3{background-image:url("../img/projects/cygnus-strike/3.png");}
+#lr_1{background-image:url("../img/projects/line-robot/iso.jpg");}
+#lr_2{background-image:url("../img/projects/line-robot/front.jpg");}
+#lr_3{background-image:url("../img/projects/line-robot/left.jpg");}
+#lr_4{background-image:url("../img/projects/line-robot/back.jpg");}
+#lr_5{background-image:url("../img/projects/line-robot/right.jpg");}
+#lr_6{background-image:url("../img/projects/line-robot/track.jpg");}
 
 /*===MODAL GALLERY VIEW===*/
 /*the modal (grey background)*/

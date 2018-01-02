@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LINE FOLLOWING ROBOT</title>
+		<!--required meta tags-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+		<!--bootstrap css-->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/main_style.css" rel="stylesheet">
+		<link href="../css/project_general_style.css" rel="stylesheet">
+		<!-- jQuery library-->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--Latest compiled Javascript-->
+		<script src="../js/bootstrap.js"></script>
+		<!--FAVICON (http://realfavicongenerator.net/)-->
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../img/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../img/favicon/manifest.json">
+		<link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<!--NAVIGATION BAR-->
+		<div class = "navbar navbar-default navbar-fixed-top">
+			<div class = "container-fluid">
+			<div class="headerContainer">
+				<div class = "navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="../index.html#landing">
+						<p>DavidChau</p>
+					</a>
+				</div>
+				<div class = "collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.html#about"><span>About</span></a></li>
+					<li><a href="../index.html#projects"><span>Projects</span></a></li>
+					<li><a href="../index.html#contact"><span>Contact</span></a></li>
+				</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<!--PROJECT TITLE SECTION-->
+		<div class="titleSection">
+			<div class="container-fluid">
+				<h1>LINE FOLLOWING ROBOT</h1>
+				<p>Summative project for MTE220.</p>
+				<div class = "button-center" id="btnRepo">
+					<a href="https://github.com/thechausenone/sandbox/tree/master/line-following-robot" target="_blank" id="btnGithub">
+						Repository
+					</a>
+					<a href="https://www.youtube.com/watch?v=cqUxBWwWcKQ" target="_blank" id="btnDemo">
+						 DEMO VID
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--GALLERY SECTION-->
+		<div class="gallerySection">
+			<div class="container-fluid">
+				<div class="contentContainer">
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_1" title="Isometric view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_2" title="Front view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_3" title="Left view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_4" title="Back view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_5" title="Right view."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_6" title="Example racetrack."></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--FOOTER-->
+		<div class="footerSection">
+			<div class="container-fluid">
+				<footer>
+					<p class= "copyright">
+					 copyright &copy; 2017
+					</p>
+				</footer>
+			</div>
+		</div>
+		
+		<!--MODAL-->
+		<div id="myModal" class="modal">
+			<span class="close"
+			onclick="document.getElementById('myModal').style.display='none'">
+			&times;
+			</span>
+			<img class="modal-content" id="modalImg" src="about:blank" alt="modal image">
+			<div id="modalCaption"></div>
+		</div>
+			
+		<!--JAVASCRIPT FOR MODAL-->
+		<script>
+		var modal = document.getElementById('myModal');
+		var modalImg = document.getElementById('modalImg');
+		var modalmodalCaption = document.getElementById('modalCaption');
+		
+		//open modal when image is clicked
+		var openModal=function(){
+			var bg= $(this).css('background-image');
+			bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+			modal.style.display="block";
+			$("body").css("overflow-y", "hidden");
+			modalImg.src = bg;
+			modalmodalCaption.innerHTML=this.title;
+		}
+		
+		document.getElementById('gumballin_1').onclick=openModal;
+		document.getElementById('gumballin_2').onclick=openModal;
+		document.getElementById('gumballin_3').onclick=openModal;
+		document.getElementById('gumballin_4').onclick=openModal;
+		document.getElementById('gumballin_5').onclick=openModal;
+		document.getElementById('gumballin_6').onclick=openModal;
+		document.getElementById('gumballin_7').onclick=openModal;
+		document.getElementById('gumballin_8').onclick=openModal;
+		
+		//get the element that closes the modal
+		var btnClose = document.getElementsByClassName("close")[0];
+		
+		//close modal when user clicks the X
+		btnClose.onclick = function(){
+			modal.style.display="none";
+			$("body").css("overflow-y", "auto");
+		}
+		</script>
+		
+	</body>
+</html>
+

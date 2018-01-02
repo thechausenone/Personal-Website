@@ -249,6 +249,8 @@ ul.nav a:hover span{
 
 .twoLine{bottom:35%;}
 
+.threeLine{bottom:30%;}
+
 .projectTags{
 	position:absolute;
 	width:100%;
@@ -263,30 +265,32 @@ ul.nav a:hover span{
 	text-transform:uppercase;
 }
 
+#LineRobot{
+	background-image:url("../img/projects/line-robot.png");
+	background-size:70% 50%;
+}
+
 #Gumballin{
 	background-image:url("../img/projects/gumballin.png");
-	/*background-size: 42.7% 76.4%;*/
 	background-size:28% 50%;
 }
 
 #CygnusStrike{
 	background-image:url("../img/projects/cygnus-strike.png");
-	/*background-size: 66.8% 76.4%;*/
 	background-size:44% 50%;
 }
 
 #PokeDodge{
 	background-image:url("../img/projects/pokedodge.png");
-	/*background-size: 76.4% 76.4%;*/
 	background-size: 50% 50%;
 }
 
 #Graphics{
 	background-image:url("../img/projects/graphics.png");
-	/*background-size: 63.7% 76.4%;*/
 	background-size:42% 50%;
 }
 
+.projectCardContainer #LineRobot:hover,
 .projectCardContainer #Gumballin:hover,
 .projectCardContainer #CygnusStrike:hover,
 .projectCardContainer #PokeDodge:hover,
