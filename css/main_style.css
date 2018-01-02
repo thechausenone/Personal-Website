@@ -265,6 +265,11 @@ ul.nav a:hover span{
 	text-transform:uppercase;
 }
 
+#SmartMirror{
+	background-image:url("../img/projects/smart-mirror.png");
+	background-size:50% 63.44%;
+}
+
 #Workspace{
 	background-image:url("../img/projects/workspace.png");
 	background-size:50% 50%;
@@ -295,6 +300,7 @@ ul.nav a:hover span{
 	background-size:42% 50%;
 }
 
+.projectCardContainer #SmartMirror:hover,
 .projectCardContainer #Workspace:hover,
 .projectCardContainer #LineRobot:hover,
 .projectCardContainer #Gumballin:hover,
