@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>LINE FOLLOWING ROBOT</title>
+		<title>WORKSPACE</title>
 		<!--required meta tags-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
@@ -49,17 +49,32 @@
 		<!--PROJECT TITLE SECTION-->
 		<div class="titleSection">
 			<div class="container-fluid">
-				<h1>LINE FOLLOWING ROBOT</h1>
-				<p>Summative project for MTE220.</p>
+				<h1>WORKSPACE</h1>
+				<p>A desktop application used to configure, manage, and quick-launch application/file windows.</p>
 				<div class = "button-center" id="btnRepo">
-					<a href="https://github.com/thechausenone/sandbox/tree/master/line-following-robot" target="_blank" id="btnGithub">
+					<a href="https://github.com/thechausenone/workspace" target="_blank" id="btnGithub">
 						Repository
 					</a>
-					<a href="https://youtu.be/tHIGkPEpsec" target="_blank" id="btnDemo">
-						 DEMO VID
-					</a>
 				</div>
-				
+			</div>
+		</div>
+		
+		<!--INFO SECTION-->
+		<div class="infoSection">
+			<div class="container-fluid">
+				<div class="contentContainer">
+					<div class="areaAbout"> 
+						<div class="sectionTitle"><span>About</span></div>
+						<p class="paraText">
+							Workspace is a cross-platform desktop application that allows users to configure, manage, and 
+							quick-launch application/file windows with ease. Each window in Workspace corresponds to an 
+							application/file window and a grouping of windows are called boards. Users are able to manage and 
+							configure these boards to suit their needs, and once done, each board can be activated to launch all 
+							its associated windows. Once everything is configured the first time around, launching groups of 
+							application/file windows becomes as easy as clicking a button.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		
@@ -67,12 +82,12 @@
 		<div class="gallerySection">
 			<div class="container-fluid">
 				<div class="contentContainer">
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_1" title="Isometric view."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_2" title="Front view."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_3" title="Left view."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_4" title="Back view."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_5" title="Right view."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="lr_6" title="Example racetrack."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_1" title="Home screen."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_2" title="Login screen."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_3" title="Example of boards."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_4" title="Create board dialog."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_5" title="Edit board dialog."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_6" title="Example of activating a board."></a></div>
 				</div>
 			</div>
 		</div>
@@ -114,12 +129,12 @@
 			modalmodalCaption.innerHTML=this.title;
 		}
 		
-		document.getElementById('lr_1').onclick=openModal;
-		document.getElementById('lr_2').onclick=openModal;
-		document.getElementById('lr_3').onclick=openModal;
-		document.getElementById('lr_4').onclick=openModal;
-		document.getElementById('lr_5').onclick=openModal;
-		document.getElementById('lr_6').onclick=openModal;
+		document.getElementById('workspace_1').onclick=openModal;
+		document.getElementById('workspace_2').onclick=openModal;
+		document.getElementById('workspace_3').onclick=openModal;
+		document.getElementById('workspace_4').onclick=openModal;
+		document.getElementById('workspace_5').onclick=openModal;
+		document.getElementById('workspace_6').onclick=openModal;
 		
 		//get the element that closes the modal
 		var btnClose = document.getElementsByClassName("close")[0];

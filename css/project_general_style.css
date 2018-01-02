@@ -159,6 +159,12 @@ a:hover, a:link, a:visited, a:active{
 #lr_4{background-image:url("../img/projects/line-robot/back.jpg");}
 #lr_5{background-image:url("../img/projects/line-robot/right.jpg");}
 #lr_6{background-image:url("../img/projects/line-robot/track.jpg");}
+#workspace_1{background-image:url("../img/projects/workspace/home.png");}
+#workspace_2{background-image:url("../img/projects/workspace/login.png");}
+#workspace_3{background-image:url("../img/projects/workspace/board.png");}
+#workspace_4{background-image:url("../img/projects/workspace/create board.png");}
+#workspace_5{background-image:url("../img/projects/workspace/edit board.png");}
+#workspace_6{background-image:url("../img/projects/workspace/result.png");}
 
 /*===MODAL GALLERY VIEW===*/
 /*the modal (grey background)*/

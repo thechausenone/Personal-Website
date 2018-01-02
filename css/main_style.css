@@ -265,6 +265,11 @@ ul.nav a:hover span{
 	text-transform:uppercase;
 }
 
+#Workspace{
+	background-image:url("../img/projects/workspace.png");
+	background-size:50% 50%;
+}
+
 #LineRobot{
 	background-image:url("../img/projects/line-robot.png");
 	background-size:70% 50%;
@@ -290,6 +295,7 @@ ul.nav a:hover span{
 	background-size:42% 50%;
 }
 
+.projectCardContainer #Workspace:hover,
 .projectCardContainer #LineRobot:hover,
 .projectCardContainer #Gumballin:hover,
 .projectCardContainer #CygnusStrike:hover,
