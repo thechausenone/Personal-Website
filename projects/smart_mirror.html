@@ -62,7 +62,11 @@
 					<div class="areaAbout"> 
 						<div class="sectionTitle"><span>About</span></div>
 						<p class="paraText">
-							placeholder.txt
+							The core functionality of the Smart Mirror is implemented using the open source smart mirror platform, 
+							<a href = "https://github.com/MichMich/MagicMirror" target = "_blank">MagicMirror<sup>2</sup>.</a>
+							There are plans to create a companion web/mobile app that will interact with the Smart Mirror and allow
+							customization without having to access the Raspberry Pi itself. As such, the project as a whole is still
+							considered a work in progress at the moment. 
 						</p>
 					</div>
 				</div>
@@ -73,12 +77,8 @@
 		<div class="gallerySection">
 			<div class="container-fluid">
 				<div class="contentContainer">
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_1" title="Home screen."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_2" title="Login screen."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_3" title="Example of boards."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_4" title="Create board dialog."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_5" title="Edit board dialog."></a></div>
-					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="workspace_6" title="Example of activating a board."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="smart_mirror_1" title="Front view of Smart Mirror."></a></div>
+					<div class="imgCardContainer"><a href="javascript:void(0)" class="imgCard" id="smart_mirror_2" title="Back view of Smart Mirror."></a></div>
 				</div>
 			</div>
 		</div>
@@ -88,7 +88,7 @@
 			<div class="container-fluid">
 				<footer>
 					<p class= "copyright">
-					 copyright &copy; 2017
+					 copyright &copy; 2018
 					</p>
 				</footer>
 			</div>
@@ -120,12 +120,8 @@
 			modalmodalCaption.innerHTML=this.title;
 		}
 		
-		document.getElementById('workspace_1').onclick=openModal;
-		document.getElementById('workspace_2').onclick=openModal;
-		document.getElementById('workspace_3').onclick=openModal;
-		document.getElementById('workspace_4').onclick=openModal;
-		document.getElementById('workspace_5').onclick=openModal;
-		document.getElementById('workspace_6').onclick=openModal;
+		document.getElementById('smart_mirror_1').onclick=openModal;
+		document.getElementById('smart_mirror_2').onclick=openModal;
 		
 		//get the element that closes the modal
 		var btnClose = document.getElementsByClassName("close")[0];
